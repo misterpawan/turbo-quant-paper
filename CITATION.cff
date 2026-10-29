@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+message: "Please cite the paper when using this code. The complete BibTeX is in citation.bib."
+title: "Quantizing Masked Diffusion Language Models: Storage-Quality Trade-offs and Runtime Diagnostics"
+type: software
+authors:
+  - family-names: Kumar
+    given-names: Pawan
+    affiliation: "IIIT, Hyderabad, India"
+  - family-names: Mishra
+    given-names: Neel
+repository-code: "https://github.com/misterpawan/turbo-quant-paper"
+url: "https://aclanthology.org/2026.emnlp-industry.241/"
+license: Apache-2.0
+preferred-citation:
+  type: conference-paper
+  title: "Quantizing Masked Diffusion Language Models: Storage-Quality Trade-offs and Runtime Diagnostics"
+  authors:
+    - family-names: Kumar
+      given-names: Pawan
+    - family-names: Mishra
+      given-names: Neel
+  collection-title: "Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing: Industry Track"
+  year: 2026
+  month: 10
+  start: 4067
+  end: 4089
+  publisher:
+    name: "Association for Computational Linguistics"
+  url: "https://aclanthology.org/2026.emnlp-industry.241/"

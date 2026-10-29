@@ -1,0 +1,17 @@
+@inproceedings{kumar-mishra-2026-quantizing,
+    title = "Quantizing Masked Diffusion Language Models: Storage-Quality Trade-offs and Runtime Diagnostics",
+    author = "Kumar, Pawan  and
+      Mishra, Neel",
+    editor = "Atanasova, Pepa  and
+      Haffari, Gholamreza  and
+      Wang, Minghan",
+    booktitle = "Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing: Industry Track",
+    month = oct,
+    year = "2026",
+    address = "Budapest, Hungary",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2026.emnlp-industry.241/",
+    pages = "4067--4089",
+    ISBN = "979-8-89176-460-6",
+    abstract = "Masked diffusion language models reuse one denoiser across many steps, so post-training quantization (PTQ) must balance predictive quality, serialized storage, and runtime memory. We evaluate LLaDA-8B-Instruct and run transfer checks on Dream-7B, MDLM-OWT, encoder-only masked LMs, LLaDA-MoE, and LLaDA2.0-mini. The 24-text calibration set is distinct from the main $n{=}500$-example-per-task evaluation. Three findings emerge. First, AWQ-4 is the closest tested 4-bit quality point at the evaluated 1.1{--}2.3 percentage-point resolution, although ARC-Challenge shows a detectable loss. TurboLDM-$(3{+}1)$ instead provides the smallest serialized checkpoint (4.82 GiB, 3.55 effective bits) while losing quality, making it a storage-compression and diagnostic result, not a live-memory result. NF4 alone reduces peak VRAM from roughly 15 GiB to 6 GiB in our tested PyTorch/bitsandbytes runtime; this is a runtime-specific outcome, not an inherent format advantage. Second, individual attention projections are inexpensive to quantize, whereas jointly quantizing the attention block is damaging. Third, more denoising steps partly recover GSM8K loss but not multiple-choice accuracy."
+}
